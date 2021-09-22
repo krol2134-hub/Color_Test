@@ -28,6 +28,7 @@ public class GameController : MonoBehaviour
 
     private void FinishLevelHandler()
     {
+        Time.timeScale = 1f;
         StartCoroutine(RestartWithDelay(winRestartDelay));
     }
 

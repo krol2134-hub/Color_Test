@@ -481,8 +481,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cc1d089c8c00fd458821af4175e0813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 11
-  horizontalMoveSpeed: 35
+  speed: 15
+  horizontalMoveSpeed: 1
   xBoundOffset: 0.25
   floor: {fileID: 1008721130}
 --- !u!65 &242140256
@@ -766,6 +766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716c7e0e8382f6440bc92ae6591cfb82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayDisplayWinText: 2
   winTextObj: {fileID: 570228370}
   loseTextObj: {fileID: 836856013}
   endLevelBgObj: {fileID: 1238998854}
@@ -795,7 +796,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 321143137}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 143.84}
+  m_LocalPosition: {x: 0, y: 0, z: 143.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 742867602}
@@ -1738,8 +1739,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962973678}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.043009758, z: 162.6}
-  m_LocalScale: {x: 40, y: 1, z: 40}
+  m_LocalPosition: {x: 0, y: 0.043, z: 158.5238}
+  m_LocalScale: {x: 40, y: 1, z: 31.848}
   m_Children: []
   m_Father: {fileID: 742867602}
   m_RootOrder: 1
@@ -1841,7 +1842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetToFollow: {fileID: 242140253}
-  offset: {x: 0, y: 0, z: -20}
+  offset: {x: 0, y: 0, z: -13}
 --- !u!1 &977144687
 GameObject:
   m_ObjectHideFlags: 0
@@ -2381,10 +2382,10 @@ RectTransform:
   m_Father: {fileID: 276908222}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 480}
-  m_SizeDelta: {x: 0, y: 691.2751}
+  m_SizeDelta: {x: 1700, y: 691.2751}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1238998856
 MonoBehaviour:
@@ -3132,7 +3133,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2007644246}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 176.6}
+  m_LocalPosition: {x: 0, y: 0, z: 172.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1270668860}
@@ -3228,7 +3229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loseRestartDelay: 2
-  winRestartDelay: 3
+  winRestartDelay: 4
 --- !u!1 &2082911705
 GameObject:
   m_ObjectHideFlags: 0
