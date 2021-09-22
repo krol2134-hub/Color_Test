@@ -60,9 +60,9 @@ public class Movement : MonoBehaviour
         {
             return;
         }
-        
+
         var horSpeed = horizontalMoveSpeed * Time.deltaTime;
-        var newXPos = InputPlayer.GetXDelta() * horSpeed;
+        var newXPos = InputPlayer.GetXDelta() / 2 * horSpeed;
         var currentPos = transform.position;
         currentPos.x += newXPos;
         currentPos.x = Mathf.Clamp(currentPos.x, xMin, xMax);

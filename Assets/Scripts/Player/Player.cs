@@ -25,6 +25,11 @@ public class Player : MonoBehaviour
     {
         SlideZoneTrigger.OnSlideZoneEnter += OnSlideZoneEnterHandler;
     }
+    
+    private void OnDisable()
+    {
+        SlideZoneTrigger.OnSlideZoneEnter -= OnSlideZoneEnterHandler;
+    }
 
     private void OnSlideZoneEnterHandler()
     {

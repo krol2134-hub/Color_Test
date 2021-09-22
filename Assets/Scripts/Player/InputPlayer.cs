@@ -8,25 +8,17 @@ public class InputPlayer : MonoBehaviour
     public static bool IsMove => Input.GetMouseButton(0);
     
     private bool wasFirstClick;
-    private float lastXPos;
 
     public static float GetXDelta()
     {
-#if UNITY_EDITOR
-        return Input.GetAxis("Mouse X");
-#else
-        return Input.GetTouch(0).deltaPosition.x;
-#endif
+        return Input.touchCount > 0 ? Input.GetTouch(0).deltaPosition.x : Input.GetAxis("Mouse X");
     }
     
     private void Update()
     {
         if (Input.GetMouseButtonDown(0) && !wasFirstClick)
         {
-            lastXPos = Input.mousePosition.x;
-
-            if (!wasFirstClick)
-                FirstClickProcess();
+            FirstClickProcess();
         }
     }
 
