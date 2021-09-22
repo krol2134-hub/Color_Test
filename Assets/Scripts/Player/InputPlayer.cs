@@ -11,7 +11,7 @@ public class InputPlayer : MonoBehaviour
 
     public static float GetXDelta()
     {
-        return Input.touchCount > 0 ? Input.GetTouch(0).deltaPosition.x : Input.GetAxis("Mouse X");
+        return Input.touchCount > 0 ? Input.GetTouch(0).deltaPosition.x / 5 : Input.GetAxis("Mouse X");
     }
     
     private void Update()
